@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  * @author jiafan
  * @version 1.0
  */
-public class Solotion24 extends BaseListNode {
+public class Solution24 extends BaseListNode {
     @Test
     public void test() {
         Assertions.assertArrayEquals(new int[]{2, 1, 4, 3}, toArray(swapPairs(buildListNode(new int[]{1, 2, 3, 4}))));
