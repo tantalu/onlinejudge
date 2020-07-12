@@ -1,6 +1,5 @@
 package tantalu.leetcode;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -9,19 +8,12 @@ import org.junit.jupiter.api.Test;
  * @author jiafan
  * @version 1.0
  */
-public class Solution57 {
+public class Solution57 extends BaseMatrix {
     @Test
     public void test() {
         matrixEquals(new int[][]{{1, 5}, {6, 9}}, insert(new int[][]{{1, 3}, {6, 9}}, new int[]{2, 5}));
         matrixEquals(new int[][]{{1, 2}, {3, 10}, {12, 16}}, insert(new int[][]{{1, 2}, {3, 5}, {6, 7}, {8, 10}, {12, 16}}, new int[]{4, 8}));
         matrixEquals(new int[][]{{1, 2}, {4, 6}, {7, 9}}, insert(new int[][]{{1, 2}, {4, 6}, {7, 9}}, new int[]{4, 6}));
-    }
-
-    void matrixEquals(int[][] expected, int[][] actural) {
-        Assertions.assertEquals(expected.length, actural.length);
-        for (int i = 0; i < expected.length; ++i) {
-            Assertions.assertArrayEquals(expected[i], actural[i]);
-        }
     }
 
     public int[][] insert(int[][] intervals, int[] newInterval) {

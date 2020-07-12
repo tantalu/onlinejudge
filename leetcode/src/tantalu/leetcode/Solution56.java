@@ -10,7 +10,7 @@ import java.util.Comparator;
  * @author jiafan
  * @version 1.0
  */
-public class Solution56 {
+public class Solution56 extends BaseMatrix {
     @Test
     public void test() {
         matrixEquals(new int[][]{{1, 6}, {8, 10}, {15, 18}}, merge(new int[][]{{1, 3}, {2, 6}, {8, 10}, {15, 18}}));
